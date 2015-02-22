@@ -34,6 +34,10 @@ public class MainActivity extends ActionBarActivity {
         items.add(new ItemModel(R.drawable.image_girl, getString(R.string.content_girl)));
         items.add(new ItemModel(R.drawable.image_paris, getString(R.string.content_paris)));
         items.add(new ItemModel(R.drawable.image_water, getString(R.string.content_water)));
+        items.add(new ItemModel(R.drawable.image_duck, getString(R.string.content_duck)));
+        items.add(new ItemModel(R.drawable.image_fish, getString(R.string.content_fish)));
+        items.add(new ItemModel(R.drawable.image_globos, getString(R.string.content_globos)));
+        items.add(new ItemModel(R.drawable.image_lake, getString(R.string.content_lake)));
 
         /* Set actionbar */
         toolbar = (Toolbar) findViewById(R.id.toolbar);

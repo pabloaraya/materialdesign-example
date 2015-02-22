@@ -2,6 +2,7 @@ package com.pabloaraya.materialdesign;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.os.Handler;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,14 +47,24 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapterHolder> {
 
         /* Set typeface */
         myAdapterHolder.textView.setTypeface(robotoLight);
-        myAdapterHolder.imageView.setOnClickListener(new View.OnClickListener() {
+
+        /* Listener */
+        myAdapterHolder.rippleView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (onTapListener != null)
-                    onTapListener.onTapView(i);
+                if (onTapListener != null) {
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            onTapListener.onTapView(i);
+                        }
+                    }, 500);
+                }
             }
+
+            ;
         });
-    }
+    };
 
     @Override
     public int getItemCount() {
