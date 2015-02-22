@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title app -->
+    <string name="app_name">Material Design Example</string>
+
+    <!-- Cards content -->
+    <string name="content_girl">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="content_paris">Sed ut perspiciatis unde omnis iste natus error</string>
+    <string name="content_water">Duis aute irure dolor in reprehenderit in voluptate</string>
+
+    <!-- Dialog content -->
+    <string name="title_dialog_action">dialog title</string>
+    <string name="dialog_content_action">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum</string>
+    <string name="title_activity_my">MyActivity</string>
+
+    <!-- Widget content -->
+    <string name="title_widget">Widget title</string>
+    <string name="button_widget">Yes!</string>
+</resources>
